@@ -10,61 +10,72 @@
     <title>Amstaff</title>
 </head>
 <body>
-    <!-- Header -->
-    <section class="header">
+    <header class="header" id="header">
         <div class="container">
-            <div class="header__top">
+            <div class="header__inner">
                 <div class="logo">Jutta Elus</div>
                 <div class="nav" id="nav__toggle">
-                    <a class="nav__item active" id="nav__item" href="#">Главная</a>
-                    <a class="nav__item" id="nav__item" href="#">Стандарт породы</a>
-                    <a class="nav__item" id="nav__item" href="#">Кобели</a>
-                    <a class="nav__item" id="nav__item" href="#">Суки</a>
-                    <a class="nav__item" id="nav__item" href="#">Статьи</a>
-                    <a class="nav__item" id="nav__item" href="#">Контакты</a>
+                    <a class="nav__item active" id="nav__item"  data-scroll="#intro" href="#">Главная</a>
+                    <a class="nav__item" id="nav__item" data-scroll="#standart" href="#">Стандарт породы</a>
+                    <a class="nav__item" id="nav__item" data-scroll="#males" href="#">Кобели</a>
+                    <a class="nav__item" id="nav__item" data-scroll="#females" href="#">Суки</a>
+                    <a class="nav__item" id="nav__item" data-scroll="#articles" href="#">Статьи</a>
+                    <a class="nav__item" id="nav__item" data-scroll="#contacts" href="#">Контакты</a>
                 </div>
             </div>
-            <div class="header__content">
-                <div class="header__block">
-                    <div class="header__item show">
-                        <div class="header__title">
+        </div>
+    </header>
+    <!-- intro -->
+    <section class="intro" id="intro">
+        <div class="container">
+            
+            <div class="intro__content">
+                <div class="intro__slider">
+                <div class="intro__block" id="intro__block">
+                    <div class="intro__item">
+                        <div class="intro__title">
                             <h1 class="title-h1">У нас родились щенки</h1>
                         </div>
-                        <div class="header__text">
+                        <div class="intro__text">
                              <p class="text-p">По вопросу приобретения щенков, оставьте контактные данные или свяжитесь с питомником самостоятельно.</p>
                              </div>
-                        <button class="btn">Хочу щенка</button>
+                        <button class="btn" id="btn" data-scroll="#contacts">Хочу щенка</button>
                     </div>
-                    <div class="header__item ">
-                        <div class="header__title">
+                    <div class="intro__item ">
+                        <div class="intro__title">
                             <h1 class="title-h1">Информация о питомнике</h1>
                         </div>
-                        <div class="header__text">
+                        <div class="intro__text">
                             <p class="text-p">Все наши владельцы обеспечиваются необходимой информацией по породе и её особенностях, а так же им своевременно предоставляются ветеринарные врачи, инструктор- тренер по подготовке к выставкам, зоопсихолог и дрессировщик.</p>
                         </div>
-                        <button class="btn">Контакты</button>
+                        <button class="btn" id="btn" data-scroll="#contacts">Контакты</button>
                     </div>
-                    <div class="header__item ">
-                        <div class="header__title">
+                    <div class="intro__item ">
+                        <div class="intro__title">
                             <h1 class="title-h1">Строгий подбор владельцев</h1>
                         </div>
-                        <div class="header__text">
+                        <div class="intro__text">
                             <p class="text-p">Мы не продаём щенков как предполагаемый подарок или предмет интерьера, а так же с формулировкой - "для ребёнка", т.к. считаем, что собака - не может служить игрушкой увеселения. Мы не отправляем щенков "посылкой" куда-либо, без сопровождения владельцев.</p>
-                            <p class="text-p">Приезжайте, будем знакомиться.</p>
+                            
                         </div>
-                        <button class="btn">Контакты</button>
+                        <button class="btn" id="btn" data-scroll="#contacts">Контакты</button>
                     </div>
                 </div>
-                <div class="header__circles">
-                    <span class="header__circles-item active"></span>
-                    <span class="header__circles-item"></span>
-                    <span class="header__circles-item"></span>
+                
+            </div>
+            <div class="intro__btns">
+                <div class="intro__btn-left intro__btn" id="intro__btn-left">
+                    <span class="intro__arrow-left" >лево</span>
                 </div>
+                <div class="intro__btn-right intro__btn" id="intro__btn-right">
+                    <span class="intro__arrow-right" >право</span>
+                </div>
+            </div>
             </div>
         </div>
     </section>
     <!-- Standart -->
-    <section class="standart">
+    <section class="standart" id="standart">
         <div class="container">
             <div class="standart__title">
                 <h2 class="title-h2">Стандарт породы</h2>
@@ -191,31 +202,137 @@
     </section>
 
     <!-- Males -->
-    <section class="males">
-        <div class="males__title">
+    <section class="males dogs" id="males">
+        <div class="container">
+            <div class="males__inner dogs__inner">
+        <div class="males__title dogs__title">
             <h2 class="title-h2">Кобели</h2>
         </div>  
-        <div class="males__content">Скарусель с собаками кобелями</div>
+        <div class="males__content dogs__content">
+            <div class="arrow-left arrow">
+                <span class="arrow-left-item arrow-item">СтрелкаВлево</span>
+            </div>
+
+            <div class="males__carousel dogs__carousel">
+                <div class="males__carousel-item dogs__carousel-item">
+                    <div class="males__carousel-img dogs__carousel-img">
+                        <img src="/img/male/male1.jpeg" alt="" >
+                    </div>
+                    <div class="males__carousel-text dogs__carousel-text">
+                        <span>Мухтар</span>
+                        <p>Победитель всероссийского конкурса в в наминации "Самый красивый Амстафф"</p>
+                    </div>
+                </div>
+                <div class="males__carousel-item dogs__carousel-item">
+                    <div class="males__carousel-img dogs__carousel-img">
+                        <img src="/img/male/male2.jpeg" alt="" >
+                    </div>
+                    
+                        <div class="males__carousel-text dogs__carousel-text">
+                            <span>Барбос</span>
+                            <p>Победитель всероссийского конкурса в в наминации "Самый умный Амстафф"</p>
+                        </div>
+                    
+                </div>
+                <div class="males__carousel-item dogs__carousel-item">
+                    <div class="males__carousel-img dogs__carousel-img">
+                        <img src="/img/male/male3.jpeg" alt="" >
+                    </div>
+                    <div class="males__carousel-text dogs__carousel-text">
+                        <span>Рэкс</span>
+                        <p>Победитель всероссийского конкурса в в наминации "Самый дружелюбный Амстафф"</p>
+                    </div>
+                </div>
+                <div class="males__carousel-item dogs__carousel-item">
+                    <div class="males__carousel-img dogs__carousel-img">
+                        <img src="/img/male/male4.jpeg" alt="" >
+                    </div>
+                    <div class="males__carousel-text dogs__carousel-text">
+                        <span>Тайсон</span>
+                        <p>Победитель всероссийского конкурса в в наминации "Самый самый Амстафф"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow-right arrow">
+                <span class="arrow-right-item arrow-item">СтрелкаВправо</span>
+            </div>
+        </div>
+        </div>
+        </div>
     </section>
 
     <!-- Females -->
-    <section class="females">
-        <div class="females__title">
+    <section class="females dogs" id="females">
+        <div class="container">
+            <div class="females__inner dogs__inner">
+        <div class="females__title dogs__title">
             <h2 class="title-h2">Суки</h2>
         </div>  
-        <div class="females__content">Скарусель с собаками суками</div>
+        <div class="females__content dogs__content">
+            <div class="arrow-left arrow">
+                <span class="arrow-left-item arrow-item">СтрелкаВлево</span>
+            </div>
+
+            <div class="females__carousel dogs__carousel">
+                <div class="females__carousel-item dogs__carousel-item">
+                    <div class="females__carousel-img dogs__carousel-img">
+                        <img src="/img/female/female1.jpg" alt="" >
+                    </div>
+                    <div class="females__carousel-text dogs__carousel-text">
+                        <span>Рокси</span>
+                        <p>Победитель всероссийского конкурса в в наминации "Самый красивый Амстафф"</p>
+                    </div>
+                </div>
+                <div class="females__carousel-item dogs__carousel-item">
+                    <div class="females__carousel-img dogs__carousel-img">
+                        <img src="/img/female/female2.jpg" alt="" >
+                    </div>
+                    
+                        <div class="females__carousel-text dogs__carousel-text">
+                            <span>Матильда</span>
+                            <p>Победитель всероссийского конкурса в в наминации "Самый умный Амстафф"</p>
+                        </div>
+                    
+                </div>
+                <div class="females__carousel-item dogs__carousel-item">
+                    <div class="females__carousel-img dogs__carousel-img">
+                        <img src="/img/female/female3.jpg" alt="" >
+                    </div>
+                    <div class="females__carousel-text dogs__carousel-text">
+                        <span>Джесси</span>
+                        <p>Победитель всероссийского конкурса в в наминации "Самый дружелюбный Амстафф"</p>
+                    </div>
+                </div>
+                <div class="females__carousel-item dogs__carousel-item">
+                    <div class="females__carousel-img dogs__carousel-img">
+                        <img src="/img/female/female4.jpg" alt="" >
+                    </div>
+                    <div class="females__carousel-text dogs__carousel-text">
+                        <span>Тора</span>
+                        <p>Победитель всероссийского конкурса в в наминации "Самый самый Амстафф"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow-right arrow">
+                <span class="arrow-right-item arrow-item">СтрелкаВправо</span>
+            </div>
+        </div>
+        </div>
+        </div>
     </section>
 
     <!-- Articles -->
-    <section class="articles">
+    <section class="articles" id="articles">
         <div class="container">
             <div class="articles__title">
                 <h2 class="title-h2">Статьи</h2>
             </div> 
             <div class="articles__content">
                 <div class="articles__item">
-                    <a href="" class="articles__item-link">
-                        <div class="articles__item-img"><img src="" alt=""></div>
+                    <a class="articles__item-link" href="">
+                        <div class="articles__item-img"><img src="/img/articles/articles2.jpg" alt=""></div>
                         <div class="articles__item-title">
                             <h3 class="title-h3">История породы</h3>
                         </div>
@@ -226,8 +343,8 @@
                 </div>
 
                 <div class="articles__item">
-                    <a href="" class="articles__item-link">
-                        <div class="articles__item-img"><img src="" alt=""></div>
+                    <a class="articles__item-link" href="">
+                        <div class="articles__item-img"><img src="/img/articles/articles1.jpg" alt=""></div>
                         <div class="articles__item-title">
                             <h3 class="title-h3">Жизнь в разведении или про любовь</h3>
                         </div>
@@ -238,8 +355,8 @@
                 </div>
 
                 <div class="articles__item">
-                    <a href="" class="articles__item-link">
-                        <div class="articles__item-img"><img src="" alt=""></div>
+                    <a class="articles__item-link" href="">
+                        <div class="articles__item-img"><img src="/img/articles/articles2.jpg" alt=""></div>
                         <div class="articles__item-title">
                             <h3 class="title-h3">История породы</h3>
                         </div>
@@ -250,8 +367,8 @@
                 </div>
 
                 <div class="articles__item">
-                    <a href="" class="articles__item-link">
-                        <div class="articles__item-img"><img src="" alt=""></div>
+                    <a class="articles__item-link" href="">
+                        <div class="articles__item-img"><img src="/img/articles/articles1.jpg" alt=""></div>
                         <div class="articles__item-title">
                             <h3 class="title-h3">Жизнь в разведении или про любовь</h3>
                         </div>
@@ -265,29 +382,45 @@
     </section>
 
     <!-- Contacts -->
-    <section class="contacts">
+    <section class="contacts" id="contacts"> 
         <div class="container">
+            <div class="contacts__inner">
             <div class="contacts__title">
                 <h2 class="title-h2">Контакты</h2>
             </div> 
             <div class="contacts__content">
                 <div class="contacts__item">
-                    <p class="text-p">Владелец питомника - кинолог, Устиновская Елена</p>
+                    <div class="contacts__item-inner">
+                        <p class="text-p">г Санкт-петербург</p>
+                        <p class="text-p">Владелец питомника - кинолог, Устиновская Елена</p>
+                    </div>
                 </div>
                 <div class="contacts__item">
-                    <p class="text-p">г Санкт-петербург</p>
-                    <a class="contacts-link" href="mailto: jutta_elus@list.ru">jutta_elus@list.ru</a>
-                    <a class="contacts-link" href="https://vk.com/club4252997">Группа ВКонтакте</a>
+                    <div class="contacts__item-inner">
+                        <a class="contacts-link" href="mailto: jutta_elus@list.ru">jutta_elus@list.ru</a>
+                        <a class="contacts-link" href="https://vk.com/club4252997">Группа ВКонтакте</a>
+                    </div>
                 </div>
                 <div class="contacts__item">
-                    <a class="contacts-link" href="tel: +79117052388">+7 911 705 23 88</a>
-                    <a class="contacts-link" href="tel: +79112438027">+7 911 243 80 27</a>
-                    <a class="contacts-link" href="tel: +79214410958">+7 921 441 09 58</a>
+                    <div class="contacts__item-inner">
+                        <a class="contacts-link" href="tel: +79117052388">+7 911 705 23 88</a>
+                        <a class="contacts-link" href="tel: +79112438027">+7 911 243 80 27</a>
+                        <a class="contacts-link" href="tel: +79214410958">+7 921 441 09 58</a>
+                    </div>
                 </div>
                 
             </div>
         </div>
+        </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="text-p">Все права защищены</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
