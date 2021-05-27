@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <title>Amstaff</title>
 </head>
 <body>
@@ -203,123 +205,139 @@
 
     <!-- Males -->
     <section class="males dogs" id="males">
-        <div class="container">
+        <div class="arrow-left arrow" id="males__arrow-left">
+            <span class="arrow-left-item arrow-item">СтрелкаВлево</span>
+        </div>
+        
+        <div class="container container__dogs">
             <div class="males__inner dogs__inner">
         <div class="males__title dogs__title">
             <h2 class="title-h2">Кобели</h2>
         </div>  
-        <div class="males__content dogs__content">
-            <div class="arrow-left arrow">
-                <span class="arrow-left-item arrow-item">СтрелкаВлево</span>
-            </div>
-
-            <div class="males__carousel dogs__carousel">
-                <div class="males__carousel-item dogs__carousel-item">
+    
+            <div class="males__carousel dogs__carousel" id="dogs__carousel">
+                <div class="males__carousel-item dogs__carousel-item " id="males__carousel-item">
                     <div class="males__carousel-img dogs__carousel-img">
                         <img src="/img/male/male1.jpeg" alt="" >
                     </div>
                     <div class="males__carousel-text dogs__carousel-text">
                         <span>Мухтар</span>
-                        <p>Победитель всероссийского конкурса в в наминации "Самый красивый Амстафф"</p>
+                        <p>Победитель всероссийского конкурса в наминации "Самый красивый Амстафф"</p>
                     </div>
                 </div>
-                <div class="males__carousel-item dogs__carousel-item">
+                <div class="males__carousel-item dogs__carousel-item" id="males__carousel-item">
                     <div class="males__carousel-img dogs__carousel-img">
                         <img src="/img/male/male2.jpeg" alt="" >
                     </div>
                     
                         <div class="males__carousel-text dogs__carousel-text">
                             <span>Барбос</span>
-                            <p>Победитель всероссийского конкурса в в наминации "Самый умный Амстафф"</p>
+                            <p>Победитель всероссийского конкурса в наминации "Самый умный Амстафф"</p>
                         </div>
                     
                 </div>
-                <div class="males__carousel-item dogs__carousel-item">
+                <div class="males__carousel-item dogs__carousel-item" id="males__carousel-item">
                     <div class="males__carousel-img dogs__carousel-img">
                         <img src="/img/male/male3.jpeg" alt="" >
                     </div>
                     <div class="males__carousel-text dogs__carousel-text">
                         <span>Рэкс</span>
-                        <p>Победитель всероссийского конкурса в в наминации "Самый дружелюбный Амстафф"</p>
+                        <p>Победитель всероссийского конкурса в наминации "Самый дружелюбный Амстафф"</p>
                     </div>
                 </div>
-                <div class="males__carousel-item dogs__carousel-item">
+                <div class="males__carousel-item dogs__carousel-item" id="males__carousel-item">
                     <div class="males__carousel-img dogs__carousel-img">
                         <img src="/img/male/male4.jpeg" alt="" >
                     </div>
                     <div class="males__carousel-text dogs__carousel-text">
                         <span>Тайсон</span>
-                        <p>Победитель всероссийского конкурса в в наминации "Самый самый Амстафф"</p>
+                        <p>Победитель всероссийского конкурса в наминации "Самый самый Амстафф"</p>
+                    </div>
+                </div>
+                <div class="males__carousel-item dogs__carousel-item block" id="males__carousel-item">
+                    <div class="males__carousel-img dogs__carousel-img">
+                        <img src="/img/male/male5.jpeg" alt="" >
+                    </div>
+                    <div class="males__carousel-text dogs__carousel-text">
+                        <span>Аркадий</span>
+                        <p>Победитель всероссийского конкурса в наминации "Самый выносливый Амстафф"</p>
                     </div>
                 </div>
             </div>
 
-            <div class="arrow-right arrow">
-                <span class="arrow-right-item arrow-item">СтрелкаВправо</span>
-            </div>
+            
+        
         </div>
         </div>
+        <div class="arrow-right arrow" id="males__arrow-right">
+            <span class="arrow-right-item arrow-item">СтрелкаВправо</span>
         </div>
     </section>
 
     <!-- Females -->
     <section class="females dogs" id="females">
-        <div class="container">
+        <div class="arrow-left arrow" id="females__arrow-left">
+            <span class="arrow-left-item arrow-item">СтрелкаВлево</span>
+        </div>
+        <div class="container container__dogs">
             <div class="females__inner dogs__inner">
         <div class="females__title dogs__title">
             <h2 class="title-h2">Суки</h2>
         </div>  
-        <div class="females__content dogs__content">
-            <div class="arrow-left arrow">
-                <span class="arrow-left-item arrow-item">СтрелкаВлево</span>
-            </div>
-
+        
             <div class="females__carousel dogs__carousel">
-                <div class="females__carousel-item dogs__carousel-item">
+                <div class="females__carousel-item dogs__carousel-item" id="females__carousel-item">
                     <div class="females__carousel-img dogs__carousel-img">
                         <img src="/img/female/female1.jpg" alt="" >
                     </div>
                     <div class="females__carousel-text dogs__carousel-text">
                         <span>Рокси</span>
-                        <p>Победитель всероссийского конкурса в в наминации "Самый красивый Амстафф"</p>
+                        <p>Победитель всероссийского конкурса в наминации "Самый красивый Амстафф"</p>
                     </div>
                 </div>
-                <div class="females__carousel-item dogs__carousel-item">
+                <div class="females__carousel-item dogs__carousel-item" id="females__carousel-item">
                     <div class="females__carousel-img dogs__carousel-img">
                         <img src="/img/female/female2.jpg" alt="" >
                     </div>
                     
                         <div class="females__carousel-text dogs__carousel-text">
                             <span>Матильда</span>
-                            <p>Победитель всероссийского конкурса в в наминации "Самый умный Амстафф"</p>
-                        </div>
-                    
+                            <p>Победитель всероссийского конкурса в наминации "Самый умный Амстафф"</p>
+                        </div> 
                 </div>
-                <div class="females__carousel-item dogs__carousel-item">
+                <div class="females__carousel-item dogs__carousel-item" id="females__carousel-item">
                     <div class="females__carousel-img dogs__carousel-img">
                         <img src="/img/female/female3.jpg" alt="" >
                     </div>
                     <div class="females__carousel-text dogs__carousel-text">
                         <span>Джесси</span>
-                        <p>Победитель всероссийского конкурса в в наминации "Самый дружелюбный Амстафф"</p>
+                        <p>Победитель всероссийского конкурса в наминации "Самый дружелюбный Амстафф"</p>
                     </div>
                 </div>
-                <div class="females__carousel-item dogs__carousel-item">
+                <div class="females__carousel-item dogs__carousel-item" id="females__carousel-item">
                     <div class="females__carousel-img dogs__carousel-img">
                         <img src="/img/female/female4.jpg" alt="" >
                     </div>
                     <div class="females__carousel-text dogs__carousel-text">
                         <span>Тора</span>
-                        <p>Победитель всероссийского конкурса в в наминации "Самый самый Амстафф"</p>
+                        <p>Победитель всероссийского конкурса в наминации "Самый самый Амстафф"</p>
+                    </div>
+                </div>
+                <div class="females__carousel-item dogs__carousel-item block" id="females__carousel-item">
+                    <div class="females__carousel-img dogs__carousel-img">
+                        <img src="/img/female/female5.jpeg" alt="" >
+                    </div>
+                    <div class="females__carousel-text dogs__carousel-text">
+                        <span>Тора</span>
+                        <p>Победитель всероссийского конкурса в наминации "Самый самый Амстафф"</p>
                     </div>
                 </div>
             </div>
-
-            <div class="arrow-right arrow">
-                <span class="arrow-right-item arrow-item">СтрелкаВправо</span>
-            </div>
+        
         </div>
         </div>
+        <div class="arrow-right arrow" id="females__arrow-right">
+            <span class="arrow-right-item arrow-item">СтрелкаВправо</span>
         </div>
     </section>
 
@@ -330,7 +348,7 @@
                 <h2 class="title-h2">Статьи</h2>
             </div> 
             <div class="articles__content">
-                <div class="articles__item">
+                <div class="articles__item" id="articles__item">
                     <a class="articles__item-link" href="">
                         <div class="articles__item-img"><img src="/img/articles/articles2.jpg" alt=""></div>
                         <div class="articles__item-title">
@@ -342,7 +360,7 @@
                     </a>
                 </div>
 
-                <div class="articles__item">
+                <div class="articles__item" id="articles__item">
                     <a class="articles__item-link" href="">
                         <div class="articles__item-img"><img src="/img/articles/articles1.jpg" alt=""></div>
                         <div class="articles__item-title">
@@ -354,7 +372,7 @@
                     </a>
                 </div>
 
-                <div class="articles__item">
+                <div class="articles__item" id="articles__item">
                     <a class="articles__item-link" href="">
                         <div class="articles__item-img"><img src="/img/articles/articles2.jpg" alt=""></div>
                         <div class="articles__item-title">
@@ -366,7 +384,7 @@
                     </a>
                 </div>
 
-                <div class="articles__item">
+                <div class="articles__item" id="articles__item">
                     <a class="articles__item-link" href="">
                         <div class="articles__item-img"><img src="/img/articles/articles1.jpg" alt=""></div>
                         <div class="articles__item-title">
@@ -376,8 +394,28 @@
                             <p class="text-p">Для начала, хочу познакомить вас с замечательной статьей Елены Сухановой...</p>
                         </div>
                     </a>
+                </div> 
+            </div>
+            
+            <div class="articles__block" id="articles__block">
+                <div class="articles__block-title" id="articles__block-title">
+                    <h3 class="title-h3">История породы</h3>
+                </div>
+
+                <div class="articles__block-text">
+                    
+                    <p class="text-p">Хотя <em>Американский Стаффордширский терьер</em> и считается американской породой собак, его историю невозможно отделить от <b>скрещенных староанглийских бульдогов и староанглийских терьеров.</b> В преддверии 20 века - <span class="span1">на Британских островах самой популярной собакой был бульдог</span>, которого использовали для <b>боёв с быками.</b> Бульдоги же в те времена сильно отличались от современных. На гравюрах того периода - можно увидеть собаку с длинными ногами и хвостом, более лёгкую и подвижную, чем современники. <span class="span1">Те бульдоги больше напоминали современного амстаффа - нежели бульдога.</span></p> 
+                    <p class="text-p">В Англии <b>бои быков были очень популярны.</b> Не менее популярны были и <b>бои собак с медведями.</b> Самым знаменитым местом, прославившимся собачьими боями было <em>графство Стаффордшир.</em> <span class="span2">Металлурги и шахтёры - были главными энтузиастами этих кровавых зрелищ.</span> Принимать участие в боях, могли только специально обученные собаки, которые отличались <b>азартом, силой, ловкостью и смелостью.</b> Чтобы победить собаки должны были быть идеально скоординированы и не менее важен был их размер. <span class="span2">Сегодня неизвестно - кому пришло в голову впервые скрестить бульдога и терьера.</span> Строятся предположения, что для этих целей был использован <em>Белый Английский терьер, порода, которая исчезла в 1900 году.</em> Ожидалось, что новая порода возьмёт от терьера - скорость и азарт, а от бульдога - мужественность, выносливость и упорство. Новый гибрид назвали - <b>"бульэнд-терьер"</b>, и он быстро завоевал популярность у любителей <b>собачьих боёв.</b></p>
+                    <p class="text-p">Вообще <b>собачьи бои были развлечением самых бедных слоёв общества</b>, и проводились они на старых аренах, в конюшнях и в сараях, однако через некоторое время бои привлекли энтузиастов из средних слоёв и ринги перенесли в клубы частные поместья. Высшим шиком у молодых денди - было появление на прогулке с буль-энд-терьером. <em>Ринги, на которых проходили схватки - называли "питы"</em>, а владельцы собак - победителей получали большие денежные призы.</p>
+                    <p class="text-p">В Ирландии, в окрестностях Ватерфорда, Корка и Килкенни - разводили великолепных <b>буль-энд-терьеров</b>, которых затем экспортировали в Соединённые штаты. <em>Самым известным местом в мире, где выращивались "боевые псы" - было графство Стаффордшир в Англии.</em> <span class='span1'>Шахтёры тщательно подбирали пары собак, таким образом, чтобы сохранить чистоту породы.</span> Агрессия непревзойдённого бойца - была направлена только на других собак, <b>для человека же он оставался лучшим другом.</b></p>
+                    <p class="text-p"><b>В 1835 году парламент Англии издал указ, запрещающий проведение собачьих боёв.</b> Однако, он претворялся в жизнь очень медленно, и они проходили вплоть до начала 20 века в закрытых конюшнях и подвалах. <em>От названия ринга -"пит"- пошло название - "пит-бультерьер", "пит-дог".</em> Официальное название породы, утверждённое Английским кеннел клубом, а затем и зарегистрированное им же в 1935 году, звучит как <em>"стаффордширский бультерьер".</em> Сейчас так называется некрупная, симпатичная и любимая англичанами собака. <span class="span3">История развития Американских Стаффордширских терьеров - затрагивает историю терьеров типа -"буль"- бультерьер</span>, миниатюрный бультерьер, американмский пит-бультерьер и даже косвенно - бостон-терьер. Можно сказать с уверенностью, что прародителем всех этих пород был "буль энд терьер".</p>
+                    <p class="text-p"><b>В Америку буль-энд-терьеров завезли энтузиасты собачьих боёв.</b> Помимо кровавых развлечений пионеры Дикого Запада - доверяли своим собакам более ответственные задания: <span class="span2">охранять ранчо от крыс, ужей и даже медведей, загонять в стойло скот и многое другое.</span> Фермеры понимали, что шансов  выиграть схватку с койотом-намного больше у крупных собак, поэтому они последовательно <em>отбирали более крупных представителей породы.</em> Это привело к различиям в размерах оригинальных британских и ирландских собак, с одной стороны, и собак , рождённых в Америке - с другой. Вскоре возник первый клуб, где регистрировали собак - это <span class="span2">Американский Союз Разведенцев собак (АДБА)</span>, который был организован в 1889 году. Он и по сей день регистрирует только пит-бультерьеров, как одну породу.</p>
+                    <p class="text-p"><em>Несомненно то, что ни у одной породы за весь период развития, не было такого количества названий, как у пит-булей.</em> С Самого начала, когда в Англии скрестили бульдога и терьера, и затем, когда их экспортировали в США, их называли: <span class="span1">"буль энд терьер", "бриндль буль дог", "хэлф энд хэлф", "пит буль", "пит-дог".</span> С 1930 по 1936 год их называли <span class="span1">"янки-терьер".</span> Это название придумал <b>капитан Уилл Джуди</b>, большой энтузиаст этой породы и издатель книг и журналов о собаках.Большинство селекционеров предпочитало старое название - американский пит-бультерьер. Именно под этим названием и предлагалось зарегистрировать в АКС в 1930 году. Но, сделать этого не удалось, и в качестве причины выдвигалась схожесть названия с бультерьером (породы, зарегистрированной АКС в 1891 году). Вторая же причина была связана с тем, что <b>слово "пит" ассоциировалось с кровавым спортом, боем собак</b>, который не признавался АКС никогда.</p>
+                    <p class="text-p">В мае 1936 года группа селекционеров во главе с Уилфредом Т.Брэндоном создала клуб, под названием - <em>"Клуб Стаффордширских терьеров Америки"</em> и <span class="span1">АКС, наконец-то признал породу, официально зарегистрировав её под названием "Стаффордширский терьер".</span> Название это очень похоже на уже утверждённое в Британском Кеннел Клубе (1935 год) - стаффордширский бультерьер. Сходство учитывает родственные связи между двумя породами:американской и английской.</p>
+                    <p class="text-p"><em>1 октября 1974 года - Американский Кеннел Клуб зарегистрировал английского стаффордширского бультерьера.</em> Американские селекционеры стаффордширских терьеров, породы, известной с 1936 года, договорились с англичанами, что они добавят к названию породы определение <b>"американский"</b>, чтобы избежать путаницы. <span class="span2">Это название - Американский Стаффордширский терьер - используется с 1974 года.</span></p>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -423,5 +461,7 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    
 </body>
 </html>

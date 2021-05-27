@@ -91,7 +91,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
-//    Slider
+//    Slider Intro
 
     sliderNext.addEventListener('click', () => {
         offset += 480;
@@ -110,4 +110,85 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    // Slider males and females
+
+    
+
+    
+
+    const malesLeft = document.querySelector('#males__arrow-left'),
+        malesItem = document.querySelectorAll('#males__carousel-item'),
+        malesRight = document.querySelector('#males__arrow-right'),
+        femalesLeft = document.querySelector('#females__arrow-left'),
+        femalesItem = document.querySelectorAll('#females__carousel-item'),
+        femalesRight = document.querySelector('#females__arrow-right'),
+        dogsPhotos = 4;
+
+    let malesI = 0,
+        femalesI = 0;
+
+        
+    // males
+    
+    malesRight.addEventListener( 'click', () => {
+        
+        if( malesItem[dogsPhotos + malesI]) { // Проверяет существует ли следующее фото 
+            malesItem[malesI].classList.add('block');
+            malesItem[dogsPhotos].classList.remove('block');
+            malesI++;
+        }
+    });
+    malesLeft.addEventListener( 'click', () => {
+        
+        if( malesItem[malesI-1]) { // Проверяет существует ли следующее фото
+            malesItem[malesI-1].classList.remove('block');
+            malesItem[dogsPhotos].classList.add('block');
+            malesI--;
+        }
+        });
+
+    // females
+
+    femalesRight.addEventListener( 'click', () => {
+        
+        if( femalesItem[dogsPhotos + femalesI]) { // Проверяет существует ли следующее фото 
+            femalesItem[femalesI].classList.add('block');
+            femalesItem[dogsPhotos].classList.remove('block');
+            femalesI++;
+        }
+    });
+    femalesLeft.addEventListener( 'click', () => {
+        
+        if( femalesItem[femalesI-1]) { // Проверяет существует ли следующее фото
+            femalesItem[femalesI-1].classList.remove('block');
+            femalesItem[dogsPhotos].classList.add('block');
+            femalesI--;
+        }
+        });
+
+
+        // Articles Show
+
+    const articlesItem = document.querySelectorAll('#articles__item'),
+        articlesBlock = document.querySelector('#articles__block'),
+        articlesBlockTitle = document.querySelector('#articles__block-title');
+
+        articlesItem.forEach((item) => {
+            item.addEventListener('click', (event) => {
+                event.preventDefault();
+                articlesBlock.classList.toggle('show');
+            });
+        });
+
+
+        articlesBlockTitle.addEventListener('click', () => {
+            event.preventDefault();
+                articlesBlock.classList.toggle('show');
+        });
+        
+
 });
+
+    
+        
+    
