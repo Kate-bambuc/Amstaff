@@ -244,28 +244,34 @@ const mediaQuery480 = window.matchMedia('(max-width: 480px)');
 
     function articleShow (articleItem, articleBlog, artocleTitle) {
 
+        articlesBlockHistory.classList.remove('show');
+        articlesBlockLove.classList.remove('show');
+
         articleItem.forEach((item) => {
             item.addEventListener('click', (event) => {
                 event.preventDefault();
-                articlesBlockHistory.classList.remove('show');
-                articlesBlockLove.classList.remove('show');
+                
 
+                if (articleBlog.classList.contains('show')) {
+                    articleBlog.classList.remove('show');
+                } else {
+                    articleBlog.classList.add('show');
 
-                articleBlog.classList.toggle('show');
-
-                let id = item.getAttribute('data-scroll');
-    
-                document.querySelector(id).scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                    let id = item.getAttribute('data-scroll');
+        
+                    document.querySelector(id).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             });
         });
 
 
         artocleTitle.addEventListener('click', (event) => {
             event.preventDefault();
-            articleBlog.classList.toggle('show');
+            
+            articleBlog.classList.remove('show');
         });
         
     }
