@@ -920,10 +920,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;    
 }
 
-.articles__block.show .articles__block-text {
-    transition: all .5s ease-in;
-    
-}
+
 
 .articles__block-title {
     cursor: pointer;
@@ -935,9 +932,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-height: 400px;
     overflow: auto;
-    transition: all .5s ease-in;
-    /* animation-name: article-block;
-    animation-duration: .5s; */
+    animation-name: article-block;
+    animation-duration: .5s;
     
 }
 
